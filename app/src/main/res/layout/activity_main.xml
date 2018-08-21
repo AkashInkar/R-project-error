@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3"
+        android:progress="1"
+        android:id="@+id/seekbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/seekbar"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:id="@+id/lblname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblname"
+        android:id="@+id/edtname"
+        android:hint="Enter your name"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edtname"
+        android:layout_height="wrap_content"
+        android:text="Phone No"
+        android:textSize="20dp"
+        android:id="@+id/lblphone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edtphone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblphone"
+        android:hint="Enter your name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edtphone"
+        android:layout_height="wrap_content"
+        android:text="Addresss"
+        android:textSize="20dp"
+        android:id="@+id/lbladdress"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edtaddress"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbladdress"
+        android:hint="Enter your name"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnnext"
+        android:layout_below="@id/edtaddress"
+        android:text="Next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>
